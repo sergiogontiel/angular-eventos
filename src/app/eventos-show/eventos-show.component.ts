@@ -10,13 +10,13 @@ export class EventosShowComponent implements OnInit {
 
   public eventos:IEvento[]=[{
     title:'Concierto Estopa',
-    image:'No hay',
+    image:'assets/evento1.png',
     date:'2016-10-03',
     description:'Primer concierto de Estopa',
     price:50
   },{
     title:'Cena Navidad',
-    image:'No hay',
+    image:'assets/evento2.png',
     date:'2016-12-24',
     description:'Cena de NocheBuena',
     price:70
