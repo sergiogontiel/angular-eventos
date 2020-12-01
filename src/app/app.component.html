@@ -1,6 +1,29 @@
 <div class="container">
-  <h1>
-    Welcome to {{title}}
-  </h1>
-  <app-product-list></app-product-list>
+  <nav class="navbar navbar-expand navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="#">{{'pepitoTitle' | translate}}</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/welcome']" [routerLinkActive]="['active']">{{ 'navbar.welcome' | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/products']" [routerLinkActive]="['active']">{{ 'navbar.products' | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/contact']" [routerLinkActive]="['active']">{{ 'navbar.contact' | translate }}</a>
+      </li>
+    </ul>
+    <button class="btn btn-default" (click)="changeLanguageToSpanish()">
+      <img src="./assets/spanish_flag.png" alt="Spanish Flag Icon" width="30">
+    </button>
+    <button class="btn btn-default" (click)="changeLanguageToEnglish()">
+      <img src="./assets/uk_flag.png" alt="English Flag Icon" width="30">
+    </button>
+    <button class="btn btn-default" (click)="changeLanguageToJapan()">
+      <img src="./assets/japan_flag.png" alt="Japan Flag Icon" width="30">
+    </button>
+
+  </nav>
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
 </div>

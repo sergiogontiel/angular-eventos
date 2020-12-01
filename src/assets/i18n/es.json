@@ -1,0 +1,12 @@
+{
+  "webTitle":"Esta es mi fantástica web",
+  "pepitoTitle":"Pepito",
+  "navbar":{
+    "welcome":"Bienvenido",
+    "products":"Productos",
+    "contact":"Contacta con nosotros"
+  },
+  "main":{
+    "welcomeWorks":"MI WELCOME FUNCIONA!!!"
+  }
+}

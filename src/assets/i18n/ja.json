@@ -1,0 +1,12 @@
+{
+  "webTitle":"これは私の素晴らしいウェブです",
+  "pepitoTitle":"リトルジョセフ",
+  "navbar":{
+    "welcome":"ようこそ",
+    "products":"製品",
+    "contact":"お問い合わせ"
+  },
+  "main":{
+    "welcomeWorks":"私のようこそ作品!!!"
+  }
+}

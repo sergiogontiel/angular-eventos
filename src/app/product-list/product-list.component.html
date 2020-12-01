@@ -2,44 +2,32 @@
   <div class="card-header bg-primary text-white">
     {{titulo}}
   </div>
-  <div class="card-block">
-    <form class="form">
-      <div class="form-group row">
-        <label class="col-form-label col-sm-2 text-sm-right"
-        for="filterDesc">Filtro:</label>
-        <div class="col-sm-5">
-          <input type="text" [(ngModel)]="filterSearch" class="form-control"
-          name="filterDesc" id="filterDesc" placeholder="Filter...">
+
+  <form class="form">
+        <div class="form-group row">
+          <label class="col-form-label col-sm-2 text-sm-right"
+          for="filterDesc">Filtro:</label>
+          <div class="col-sm-5">
+            <input type="text" [(ngModel)]="filterSearch" class="form-control"
+            name="filterDesc" id="filterDesc" placeholder="Filter...">
+          </div>
+          <label class="col-form-label col-sm-5">
+          Filtrando por: {{filterSearch}}</label>
         </div>
-        <label class="col-form-label col-sm-5">
-        Filtrando por: {{filterSearch}}</label>
+  </form>
+
+  <div class="tabla">
+    <div *ngIf="productos && productos.length">
+      <div class="fila">
+        <div class="celda">
+          <button class="btn btn-sm" [ngClass]=" {'btn-danger': showImage, 'btn-primary':!showImage}"(click)="toggleImage()"> {{showImage?'Hide':'Show'}} images </button>
+        </div>
+      <div class="celda">{{headers.descripcion}}</div>
+      <div class="celda">{{headers.price}}</div>
+      <div class="celda">{{headers.avail}}</div>
+      <div class="celda">{{headers.rating}}</div>
       </div>
-    </form>
-    <div class="table-responsive" *ngIf="productos && productos.length"> <!-- *ngIf Muestra solo si hay productos y productos tenga contenido -->
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>
-              <button class="btn btn-sm"
-              [ngClass]="{'btn-danger': showImage, 'btn-primary': !showImage}"
-              (click)="toggleImage()">
-              {{showImage?'Ocultar':'Mostrar'}} imagen
-              </button>
-            </th>
-            <th>{{headers.descripcion}}</th>
-            <th>{{headers.price}}</th>
-            <th>{{headers.avail}}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let producto of productos">
-            <td><img [src]="producto.imageUrl" alt="" title="{{producto.desc | uppercase}}" [style.height.px]="alturaImagen" *ngIf="showImage"></td>
-            <td [ngStyle]="objetoColor">{{producto.desc}}</td>
-            <td [ngClass]="{'azul':isAzul,'rojo':isRojo}">{{producto.price | currency:'EUR':'symbol'}}</td>
-            <td>{{producto.avail | date:'dd.MM.yy'}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+        <product-item class="fila" [producto]="product" [showImage]="showImage" *ngFor="let product of productos | productFilter:filterSearch"></product-item>
+      </div>
   </div>
 </div>
