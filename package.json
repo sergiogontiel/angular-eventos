@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "angular-productos",
+=======
+  "name": "angular-eventos",
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,9 +23,12 @@
     "@angular/platform-browser": "~11.0.0",
     "@angular/platform-browser-dynamic": "~11.0.0",
     "@angular/router": "~11.0.0",
+<<<<<<< HEAD
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@ngx-translate/core": "^10.0.2",
     "@ngx-translate/http-loader": "^3.0.1",
+=======
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
     "bootstrap": "^4.5.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Title } from '@angular/platform-browser';
+=======
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
 
 @Component({
   selector: 'app-root',
@@ -8,6 +11,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+<<<<<<< HEAD
   title = 'Mi aplicación de Productos';
 
   constructor(private translate:TranslateService, private titleService: Title){
@@ -41,4 +45,7 @@ export class AppComponent {
     this.changeTitle();
   }
 
+=======
+  title = 'angular-eventos';
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
 }

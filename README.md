@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # AngularProductos
+=======
+# AngularEventos
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.0.
 

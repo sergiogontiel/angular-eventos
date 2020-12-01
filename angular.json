@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "angular-productos": {
+=======
+    "angular-eventos": {
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/angular-productos",
+=======
+            "outputPath": "dist/angular-eventos",
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +69,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "angular-productos:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "angular-productos:build:production"
+=======
+            "browserTarget": "angular-eventos:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-eventos:build:production"
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "angular-productos:build"
+=======
+            "browserTarget": "angular-eventos:build"
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
           }
         },
         "test": {
@@ -109,19 +129,35 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "angular-productos:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "angular-productos:serve:production"
+=======
+            "devServerTarget": "angular-eventos:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-eventos:serve:production"
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
             }
           }
         }
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "angular-productos",
   "cli": {
     "analytics": false
   }
 }
+=======
+  "defaultProject": "angular-eventos",
+  "cli": {
+    "analytics": "bd5dfdc5-b7c5-4773-b2d8-52eacf19e4e9"
+  }
+}
+>>>>>>> 9174318350ccacaa77f3a9132d3df51fec9a1afa
